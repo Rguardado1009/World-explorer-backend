@@ -25,35 +25,50 @@ alaska = Airline.create(
     description: "For over 85 years, Alaska Airlines and the people who make us who we are, have been guided by integrity, caring, ingenuity, professionalism, and a unique spirit—a spirit that has grown out of our geographical roots.",
     headquarters: "SeaTac, WA",
     bag_information: "1st bag $30, 2nd bag $40.",
-    founded: "1932, Anchorage, AK"
+    founded: "1932, Anchorage, AK",
+    logo: "https://res.cloudinary.com/airlines/image/upload/c_scale,w_250/v1633576964/alaska_airlines-logo_pqnd0g.png",
+    likes: 0, 
+    dislikes: 0
 )
 delta = Airline.create(
     airline_name: "Delta Airlines",
-    description: "For over 85 years, Delta Airlines and the people who make us who we are, have been guided by integrity, caring, ingenuity, professionalism, and a unique spirit—a spirit that has grown out of our geographical roots.",
-    headquarters: "SeaTac, WA",
-    bag_information: "1st bag $30, 2nd bag $40.",
-    founded: "1932, Anchorage, AK"
+    description: "Delta Air Lines is the U.S. global airline leader in safety, innovation, reliability and customer experience. Powered by our employees around the world, Delta has for a decade led the airline industry in operational excellence while maintaining our reputation for award-winning customer service.",
+    headquarters: "Atlanta, GA",
+    bag_information: " In economy, within United States, 1st bag $30, 2nd bag $40. To other destinations, prices vary by itinerary",
+    founded: "1925, Macon, GA",
+    logo: "https://res.cloudinary.com/airlines/image/upload/c_scale,w_250/v1633577002/Delta-Logo_o391sm.png",
+    likes: 0, 
+    dislikes: 0
 )
 united = Airline.create(
     airline_name: "United Airlines",
-    description: "For over 85 years, United Airlines and the people who make us who we are, have been guided by integrity, caring, ingenuity, professionalism, and a unique spirit—a spirit that has grown out of our geographical roots.",
-    headquarters: "SeaTac, WA",
-    bag_information: "1st bag $30, 2nd bag $40.",
-    founded: "1932, Anchorage, AK"
+    description: "We Fly Right. On the ground and in the air, we hold ourselves to the highest standards in safety and reliability. We earn trust by doing things the right way and delivering on our commitments every day.",
+    headquarters: "Chicago, IL",
+    bag_information: "In economy, within Canada and United States, 1st bag $30, 2nd bag $40. To other destinations, prices vary by itinerary. ",
+    founded: "1926, Boise, ID",
+    logo: "https://res.cloudinary.com/airlines/image/upload/c_scale,w_250/v1633577360/United-logo_tte7bd.jpg",
+    likes: 0, 
+    dislikes: 0
 )
 jetblue = Airline.create(
     airline_name: "Jetblue Airlines",
-    description: "For over 85 years, Jetblue Airlines and the people who make us who we are, have been guided by integrity, caring, ingenuity, professionalism, and a unique spirit—a spirit that has grown out of our geographical roots.",
-    headquarters: "SeaTac, WA",
+    description: "Born at JFK in 1999, JetBlue is now a global, award-winning travel company. Get to know us and our commitment to customers and communities.",
+    headquarters: "New York City, NY",
     bag_information: "1st bag $30, 2nd bag $40.",
-    founded: "1932, Anchorage, AK"
+    founded: "1999, Forest Hills, Queens, NY",
+    logo: "https://res.cloudinary.com/airlines/image/upload/c_scale,w_250/v1633577419/1200px-JetBlue_Airways_Logo.svg_lvtnzf.png",
+    likes: 0, 
+    dislikes: 0
 )
 american = Airline.create(
     airline_name: "American Airlines",
     description: "For over 85 years, Jetblue Airlines and the people who make us who we are, have been guided by integrity, caring, ingenuity, professionalism, and a unique spirit—a spirit that has grown out of our geographical roots.",
     headquarters: "SeaTac, WA",
     bag_information: "1st bag $30, 2nd bag $40.",
-    founded: "1932, Anchorage, AK"
+    founded: "1926, United States",
+    logo: "https://res.cloudinary.com/airlines/image/upload/c_scale,w_250/v1633577453/THUMB-aa_aa__ahz_4cp_grd_pos_dbaclf.png",
+    likes: 0, 
+    dislikes: 0
 )
 puts 'seeding flight'   
 f1 = Flight.create( from: "New York City" , to: "Detroit" , description: "nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat" , flight_number: "3980" , user_id: u1.id , airline_id: alaska.id ) 

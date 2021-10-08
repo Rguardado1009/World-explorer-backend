@@ -18,6 +18,9 @@ ActiveRecord::Schema.define(version: 2021_10_04_153429) do
     t.string "headquarters"
     t.text "bag_information"
     t.text "founded"
+    t.text "logo"
+    t.integer "likes"
+    t.integer "dislikes"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

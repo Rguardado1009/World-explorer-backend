@@ -6,6 +6,9 @@ class CreateAirlines < ActiveRecord::Migration[6.1]
       t.string :headquarters
       t.text :bag_information
       t.text :founded
+      t.text :logo
+      t.integer :likes
+      t.integer :dislikes
 
       t.timestamps
     end
